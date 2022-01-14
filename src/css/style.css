@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(68, 68, 68);
+}
+
+/* Navbar Section */
+
+.navbar {
+  background-color: rgb(23, 23, 23);
+}
+
+.btn-custom {
+  color: rgb(218, 0, 55);
+  border-color: rgb(218, 0, 55);
+}
+
+.btn-custom:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(218, 0, 55);
+}
+
+/* Movies Section */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info span {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.25rem 0.5rem;
+}
+
+.card-info span.green {
+  color: rgb(0, 128, 0);
+}
+.card-info span.orange {
+  color: rgb(255, 166, 0);
+}
+.card-info span.red {
+  color: rgb(255, 0, 0);
+}
+
+.overview {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  overflow: auto;
+  padding: 1rem;
+  background-color: rgb(0, 0, 0, 0.55);
+  backdrop-filter: blur(1rem);
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.card:hover .overview {
+  transform: translateY(0);
+}
